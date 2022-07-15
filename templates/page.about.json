@@ -1,0 +1,94 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Our story",
+            "title_size": 80,
+            "subheading": "About us",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/carrot-cupcakes-3-1-scaled.jpg",
+            "overlay_opacity": 12,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "500px",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Manna is a blessed substance from heaven that descended on Moses on his pilgrimage from Egypt. It is a sweet honey-like substance that is <strong>filled with health<\/strong>, <strong>healing<\/strong> and <strong>wellbeing<\/strong><\/p><p>Everything we create is <strong>healthy<\/strong>, <strong>delicious<\/strong>, and <strong>innovative<\/strong>. We use the finest and most <strong>nutritious ingredients<\/strong>, with every piece <strong>handmade<\/strong> to guarantee <strong>unmatched quality<\/strong>. We never stop experimenting and we are obsessed with <strong>mastering product textures<\/strong>. We primarily use organic flours when possible for all our goodies.<\/p><p>All our dairy milkis organic and all our eggs are organic free range. We use organic coconut palm sugar and organic agave nectar as our primary sweeteners (any products containing cane sugar are declared as such).<\/p><p>Our promise to our customers is <strong>they will not compromise on taste<\/strong>, <strong>experience<\/strong> or <strong>joy<\/strong> that comes naturally with the joy of eating.<\/p><p>Our range of products is extensive including breakfast, gluten free pastries, gluten free croissants, gluten free cakes for celebrations, artisan gluten free breads, including gluten-free vegan breads, bake-at-home pancake mix and of course your favorite classic all-day delights<br\/><br\/><strong> How It Works:<\/strong><br\/><br\/>We are a dedicated online shop (we do not offer in store service). We do offer a gluten free takeaway service for orders premade online via our website.<\/p><p>Orders must be made online and we offer a gluten free bakery delivery service.<\/p><p>Please leave your collection preferences in the “Notes” section when making your order.<\/p><p>Flexible collection times from 11am from 169 Battersea High Street SW11 3JS<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "map": {
+      "type": "map",
+      "settings": {
+        "map_title": "Our retail store",
+        "address": "<p>301 Front St W<br\/>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "background_image_position": "center center"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop now",
+        "home_featured_products": "best-sellers",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "rich-text",
+    "map",
+    "featured-collection"
+  ]
+}

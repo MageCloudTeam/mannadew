@@ -1,0 +1,543 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Artisan \nGluten Free Bakery",
+            "title_size": 80,
+            "subheading": "Coeliacs... You're Home!",
+            "link": "shopify:\/\/pages\/shop",
+            "link_text": "SHOP NOW",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Derksen_Annika_DSC_8797-Edit_2500.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        },
+        "cfd328a1-1402-41e0-9168-cc7f779042a5": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "We Have \nThe\n Honeycomb",
+            "title_size": 80,
+            "subheading": "Unmatched pastry quality. Made with our own proprietary recipe which took over 5 years of R&D. Scratch Baked!",
+            "link": "",
+            "link_text": "SHOP NOW",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/New_Gluten_Free_Croissant.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Shelf Life\n5 Days Refrigerated\n60 Days Frozen",
+            "title_size": 62,
+            "subheading": "All orders come with a Handling Document for storage and reheating",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Download handling document",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Manna_Dew1-221.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        },
+        "30c937ca-0b3f-438b-bbfa-07533beb4bbc": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Made with \nNormandy's infamous\n Lescure Butter",
+            "title_size": 80,
+            "subheading": "Considered by many to be the best butter in the world for pastry!",
+            "link": "shopify:\/\/collections\/gluten-free-viennoiserie",
+            "link_text": "SHOP Viennoiserie",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Manna_Dew1-231.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "cfd328a1-1402-41e0-9168-cc7f779042a5",
+        "slideshow-1",
+        "30c937ca-0b3f-438b-bbfa-07533beb4bbc"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Mission!"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Our ultimate mission is to redefine gluten free foods so that coeliacs do not have to make any compromise. Texture is our obsession, and we invest heavily in R&D. All we promise you is this... We will make you the best gluten free products we possibly can, and we'll keep getting better. <\/p><p>Welcome to Manna Dew Bakery!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "BestSellers",
+        "home_featured_products": "best-seller-1",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "1657470239362ec47b": {
+      "type": "logo-list",
+      "blocks": {
+        "1657470239592087ba-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hemsley-hemsley.jpg",
+            "link": ""
+          }
+        },
+        "1657470239592087ba-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pjorjevbeu98i61s0q1c.webp",
+            "link": ""
+          }
+        },
+        "1657470239592087ba-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Planet_Organic_Logo.png",
+            "link": ""
+          }
+        },
+        "1657470239592087ba-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bbc.webp",
+            "link": ""
+          }
+        },
+        "10a22465-cbc1-46d6-848e-00b844efa9ce": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Selfridges_logo.svg_7d9cc4ce-9fa7-468d-a9aa-bf6b38f38f1d.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657470239592087ba-0",
+        "1657470239592087ba-1",
+        "1657470239592087ba-2",
+        "1657470239592087ba-3",
+        "10a22465-cbc1-46d6-848e-00b844efa9ce"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 100,
+        "divider": true
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "b94d1676-dfae-4077-84bf-f5ef86194f19": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-seller-1",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "gluten-free-viennoiserie",
+            "title": "Viennoiserie",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "gluten-free-artisan-breads",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "d78f05e6-e7a7-4eb3-a9a5-0a38acc791a7": {
+          "type": "collection",
+          "settings": {
+            "collection": "vegan-2",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "cakes-cupcakes-2",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "brownies-cookies",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "4e897da7-4351-4f9c-b60d-b9d802b910c8": {
+          "type": "collection",
+          "settings": {
+            "collection": "pantry-2",
+            "title": "Pantry",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "b94d1676-dfae-4077-84bf-f5ef86194f19",
+        "featured-collections-0",
+        "featured-collections-1",
+        "d78f05e6-e7a7-4eb3-a9a5-0a38acc791a7",
+        "featured-collections-2",
+        "featured-collections-3",
+        "4e897da7-4351-4f9c-b60d-b9d802b910c8"
+      ],
+      "settings": {
+        "title": "Shop by category",
+        "divider": true,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "promo-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Explore Our Full Range Of",
+            "heading": "Viennoiserie",
+            "textarea": "Award Winning Gluten Free Pastry, both Savory and Sweet",
+            "cta_text1": "Shop Viennoiserie",
+            "cta_link1": "shopify:\/\/pages\/gluten-free-viennoiserie",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Manna_Dew1-208.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 800,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": true
+          }
+        },
+        "promo-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Explore Our Full Range of",
+            "heading": "Gluten Free  Breads",
+            "textarea": "Gluten Free Vegan Options Available",
+            "cta_text1": "SHOP Breads",
+            "cta_link1": "shopify:\/\/pages\/gluten-free-breads",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Manna_Dew_2-120.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-center",
+            "focal_point": "80% 50%",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": true,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "promo-0",
+        "promo-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "promo-grid2": {
+      "type": "promo-grid",
+      "blocks": {
+        "promo2-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Try Our Most popular product",
+            "heading": "Make Your Own Baked Danish Pastry Box (X5)",
+            "textarea": "Create a custom selection of 5 different types of gluten free Viennoiserie. You have both Savoury and Sweet to choose from!",
+            "cta_text1": "Choose Your Flavours",
+            "cta_link1": "shopify:\/\/collections\/all",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Mixed-Danish-3-1024x681.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 640,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "80% 50%",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "6774895c-2f64-4425-a241-4d3bfcd58b8a": {
+          "type": "product",
+          "settings": {
+            "product": "gift-card",
+            "subheading": "",
+            "heading": "Looking for a gift?",
+            "textarea": "",
+            "link_label": "Select amount",
+            "label": "25 to 300£",
+            "enable_price": false,
+            "width": "50",
+            "text_size": 100,
+            "color_tint": "#000000",
+            "color_tint_opacity": 0,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "promo2-0",
+        "6774895c-2f64-4425-a241-4d3bfcd58b8a"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "165746851304bf73d1": {
+      "type": "testimonials",
+      "blocks": {
+        "1657468513461cbc8f-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I have purchased patrias from here several times now, and am currently eagerly awaiting my next order. I have coeliac disease and have never found such good gluten free pastries anywhere! They are fantastic! They are 100% gluten free and I have never had a reaction to any of their products. I love that they are still experimenting with flavours and there's often a new one to try. 10\/10 would recommend to anyone, even if you don't need to be gluten free - they're that good.<br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/1st_rev.png",
+            "author": "Orlagh Quinn",
+            "author_info": ""
+          }
+        },
+        "1657468513461cbc8f-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I could not believe how good these pastries were, even better than any gluten ones I used to have before being diagnosed with coeliac!<br\/><br\/>The Pain Au Chocolat was my favourite of the ones I tried, put it in the oven for 10 minutes before eating like they recommended and it was unbelievable. Crispy layers, not dense or doughy, even my mum, who can eat gluten, now prefers them to the normal ones she can get at cafes 😊<br\/><br\/>Made someone who has really missed pastries very happy.<\/p>",
+            "image": "shopify:\/\/shop_images\/unnamed.png",
+            "author": "Diana Keys",
+            "author_info": ""
+          }
+        },
+        "1657468513461cbc8f-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>My gluten intolerant heart soared when I discovered Manna Dew. I thought I'd never have another croissant or Danish pastry ever again but along came this bakery! Every bite is absolutely divine and if I didn't know better, I'd have thought they were just regular delicious pastries. It's unbelievable that the layers and flakes can exist in a GF pastry after all.<br\/><br\/>I live in the US so I got my fill of pastries while I could and brought some back with me.<\/p>",
+            "image": "shopify:\/\/shop_images\/unnamed_1.png",
+            "author": "Amy Homer-Brown",
+            "author_info": ""
+          }
+        },
+        "1657468513461cbc8f-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>My family and I devoured those and we were all impressed by the high quality texture and deliciousness. They taste way better than normal pastries even though they are GF. Regarding the service, it was spectacular! When I picked them up, the team were all smiley, welcoming, helpful, and decent. Would definitely order again and again, especially for picnics, brunch, or breakfast. You guys are missing out big time if you haven’t tried Manna Dew yet!<br\/><\/p>",
+            "author": "Author's name",
+            "author_info": ""
+          }
+        },
+        "1657468513461cbc8f-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Wonderful gluten free bakery with special pastries! My non-gluten free fiancé agreed that the chocolate twist was as good as his pastry for breakfast! Thanks for great customer service too!<\/p>",
+            "author": "Charlotte Phillips",
+            "author_info": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657468513461cbc8f-2",
+        "1657468513461cbc8f-3",
+        "1657468513461cbc8f-4",
+        "1657468513461cbc8f-0",
+        "1657468513461cbc8f-1"
+      ],
+      "settings": {
+        "title": "WHAT OUR GLUTEN FREE BAKERY LONDON CUSTOMER SAYS",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "1656256918412f47a2": {
+      "type": "faq",
+      "blocks": {
+        "1656256918673c0975-0": {
+          "type": "question",
+          "settings": {
+            "title": "How long does our pastry last for?",
+            "text": "<p>5 days refrigerated or 60 days frozen<\/p><p>If you freeze please defrost overnight in the fridge and bake according to handling document instructions<\/p>"
+          }
+        },
+        "1656256918673c0975-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I place an order?",
+            "text": "<p>All orders must be made online. We offer delivery services and\/or store collection. <span style=\"text-decoration:underline\"><em>We are not open for store walk-ins<\/em><\/span>.<\/p><p>All UK Customers please visit Shop Now<\/p><p>If you are a USA customer you should order from our USA shop onliy.  <\/p><p><\/p>"
+          }
+        },
+        "af5fc08e-ca43-4649-9663-b49dcf5674dc": {
+          "type": "question",
+          "settings": {
+            "title": "When will I receive my order?",
+            "text": "<p>Dates are determined by the delivery calendar. Dates are not guaranteed. All orders are dispatched fresh and take 1 day to arrive via DPD once dispatched.<\/p><p><br\/>USA Orders take 2 days to arrive.<\/p>"
+          }
+        },
+        "6e08e74a-d5fb-4c35-980b-a8af01e00738": {
+          "type": "question",
+          "settings": {
+            "title": "Can I collect my order?",
+            "text": "<p>Yes but you must pre-book it on our calendar. Collections start from 11am and any collections after 2pm must be notified to 07503200020 by WhatsApp<\/p>"
+          }
+        },
+        "e91d08e8-ffc4-496b-b818-e59d6b321cc1": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a minimum spend?",
+            "text": "<p>The minimum order amount is 15 GBP for all orders. Delivery orders will have a separate additional delivery fee<\/p>"
+          }
+        },
+        "5aba84be-1aa5-48b1-88c4-7d5890aca46d": {
+          "type": "question",
+          "settings": {
+            "title": "Can I place orders in advance?",
+            "text": "<p>Yes! You can schedule orders for up to 60 days in advance and choose any delivery day except for Sunday.<\/p>"
+          }
+        },
+        "f2a28197-80c9-4dd1-93ae-b7d70c27105d": {
+          "type": "question",
+          "settings": {
+            "title": "What if my order is late?",
+            "text": "<p><strong>We do our best to work with the most reliable courier companies. However, sometimes things outside of a courier’s control can cause a delay. Where we can, we will always try and proactively call you if we become aware that your order might not arrive on time. Orders can be one day late. If your order is more than a day late, we will resend you a new order the soonest possible.<\/strong><\/p>"
+          }
+        },
+        "7fdad96e-beb5-4256-a53e-732006588d37": {
+          "type": "question",
+          "settings": {
+            "title": "What if I’m not around when my rider arrives?",
+            "text": "<p><strong>Our courier will always try to call you if there’s an issue once they reach your delivery address. Please check your emails during the delivery time for any updates. If we can’t contact you and are unable to deliver the order, your rider will wait for up to 10 minutes before leaving. In this event, we will leave your goods in a safe place or with your neighbour and will let you know where it is.  These circumstances are not eligible for refunds if something happens to your parcel. To prevent this from happening, it’s always a good idea to double-check your contact and address details and make sure someone is available to receive your parcel during the delivery window.<\/strong><\/p>"
+          }
+        },
+        "c7b697a5-a6cd-4807-839a-f04b47aaa883": {
+          "type": "question",
+          "settings": {
+            "title": "What if something is wrong with my order?",
+            "text": "<p><strong>If specific items were missing from your order, we will refund you for those items. You will be required to get in touch with the customer service team and provide proof for the missing items (e.g. photo) of your whole order.<\/strong><\/p>"
+          }
+        },
+        "4d6889cd-b1ba-4e36-80fa-dad64b68df3b": {
+          "type": "question",
+          "settings": {
+            "title": "Does Manna Dew offer subscription accounts?",
+            "text": "<p>We are working on adding subscription feature to our website. However, in the meantime if you would like to subscribe and receive a specific order on a repetitive basis, please get I touch with us via email (<a href=\"mailto:indulge@mannadew.co.uk\">indulge@mannadew.co.uk<\/a>) with the “subject: subscription”, detailing the items and frequency you’d like to subscribe to and we will respond with next steps.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1656256918673c0975-0",
+        "1656256918673c0975-1",
+        "af5fc08e-ca43-4649-9663-b49dcf5674dc",
+        "6e08e74a-d5fb-4c35-980b-a8af01e00738",
+        "e91d08e8-ffc4-496b-b818-e59d6b321cc1",
+        "5aba84be-1aa5-48b1-88c4-7d5890aca46d",
+        "f2a28197-80c9-4dd1-93ae-b7d70c27105d",
+        "7fdad96e-beb5-4256-a53e-732006588d37",
+        "c7b697a5-a6cd-4807-839a-f04b47aaa883",
+        "4d6889cd-b1ba-4e36-80fa-dad64b68df3b"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "rich-text",
+    "featured-collection",
+    "1657470239362ec47b",
+    "featured-collections",
+    "promo-grid",
+    "promo-grid2",
+    "165746851304bf73d1",
+    "1656256918412f47a2"
+  ]
+}
