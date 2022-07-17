@@ -101,7 +101,15 @@
       "width": {{ page_image.width | json }}
     },
   {% endif %}
-  "name": {{ collection.title | json }}
+  "name": {{ collection.title | json }},
+  "offers": {
+    {% assign allProd = collection.products | sort: 'price' %}
+      "@type": "AggregateOffer",
+      "lowPrice": {{ allProd[0].price_min | money_without_currency | json | replace: ',', '.' }},
+      "highPrice": {{ allProd[-1].price_min | money_without_currency | json | replace: ',', '.' }},
+      "priceCurrency": {{ cart.currency.iso_code | json }}
+    }
+  }
 }
 </script>
 
