@@ -357,7 +357,8 @@
   "shopify": {
     "collections": {
       "sorting": {
-        "date_descending": "New in"
+        "date_descending": "New in",
+        "manual": "Most popular"
       }
     }
   }
