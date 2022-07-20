@@ -7644,8 +7644,154 @@ input[type=image]{
   padding-top:0;
 }
 
+/*Custom style for filter*/
+@media only screen and (min-width:769px){
+  .grid__item--sidebar__custom{
+    margin-bottom: 12rem;
+  }
+  
+  .grid__item--sidebar__custom .collection-sidebar{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-form_custom{
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0.5rem 0.6rem #00000012;
+  }
+
+  .filter-form_custom .collection-sidebar__group{
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-form_custom .collection-sidebar__group .collapsible-trigger-btn{
+    display: flex;
+    align-items: center;
+    display: flex;
+    padding: 1.5rem 1.625rem;
+    pointer-events: none;
+  }
+  
+  .filter-form_custom .collection-sidebar__group .collapsible-trigger__icon{
+    margin-left: 10px;
+    transition: all .1s;
+    position: relative;
+    transform: none;
+    pointer-events: none;
+  }
+
+  .filter-form_custom .collection-sidebar__group.is-active .collapsible-trigger__icon{
+    transform: rotateZ(180deg);
+  }
+  
+  .filter-form_custom .collection-sidebar__group .filter-custom-content{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    left: 0;
+    top: 100%;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    pointer-events: none;
+    min-height: 185px;
+    height: 100% !important;
+  }
+  
+  .filter-form_custom .collection-sidebar__group.is-active .filter-custom-content{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .filter-form_custom .collection-sidebar__group:hover .filter-custom-content{
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity .0.5s cubic-bezier(.25,.46,.45,.94);
+  }
+
+  .filter-form_custom .collection-sidebar__group .is-open .collapsible-content__inner,
+  .filter-form_custom .collection-sidebar__group .is-open{
+    transition: opacity .0.5s cubic-bezier(.25,.46,.45,.94);
+  }
+  
+  .filter-form_custom .collection-sidebar__group .filter-custom-content .collapsible-content__inner{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-bottom: 0;
+    box-shadow: 0 0.5rem 0.6rem #00000012;
+    height: 100%;
+  }
+
+  .filter-form_custom .collection-sidebar__group:hover .collapsible-trigger__icon{
+    transition: all .1s;
+    transform: rotateZ(180deg);
+  }
+  
+  .filter-form_custom .filter-custom-content .tag-list,
+  .filter-form_custom .filter-custom-content .tag-list label{
+    margin: 0;
+  }
+  
+  .filter-form_custom .filter-custom-content .tag-list{
+    display: flex;
+    padding: 1rem 2rem 1.25rem;
+    align-items: center;
+  }
+  
+  .filter-form_custom .filter-custom-content .tag-list .tag{
+    margin-bottom: 0;
+    margin-right: 12px;
+    padding: 15px;
+    width: max-content;
+    transition: all 0.1s;
+  }
+
+  .filter-form_custom .tag-list-hover-custom .tag-list .tag{
+    background: rgba(244,245,246,1);
+  }
+
+  .filter-form_custom .tag-list-hover-custom .tag-list .tag[selected],
+  .filter-form_custom .tag-list-hover-custom .tag-list .tag[selected] .tag__text{
+    background: black;
+    color: white;
+  }
+
+  .filter-form_custom .tag-list-hover-custom .tag-list .tag:hover{
+    background: black;
+    color: white;
+    transition: all 0.1s;
+  }
+
+  .filter-form_custom .tag-list-hover-custom .tag-list .tag:hover .tag__text{
+    color: white;
+  }
+
+  .filter-form_custom .collection-sidebar__group--custom .tag-list .tag{
+    padding: 0;
+  }
+
+  .filter-form_custom .collection-sidebar__group--custom .tag .tag__text{
+    padding: 15px;
+  }
+
+  .hidden_desktop{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .hidden_tablet{
+    display: none;
+  }
+}
+/*End custom style for filter*/
+
 .is-light .site-header__logo .logo--has-inverted{
-    display:none
+  display:none
 }
 
 .site-header__logo .logo--inverted{
@@ -7838,6 +7984,16 @@ label.tag__checkbox-wrapper{
     cursor:pointer;
     height:0;
     width:0;
+}
+
+.filter-form .tag__img{
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
 }
 
 .variant-input-wrap{

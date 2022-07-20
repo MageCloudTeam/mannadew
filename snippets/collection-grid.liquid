@@ -54,17 +54,19 @@ Snippet Arguments
       {%- endif -%}
     </div>
 
-    <div class="collection-filter__item collection-filter__item--sort">
-        <div class="collection-filter__sort-container">
+    <div class="collection-filter__item collection-filter__item--sort hidden_desktop">
+      <div class="collection-filter__sort-container">
         {%- assign sort_by = sort_by | default: default_sort_by -%}
         <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
         <select name="SortBy" id="SortBy" data-default-sortby="{{ default_sort_by }}">
-          <option value="title-ascending"{% if sort_by == default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option>
           {%- for option in sort_options -%}
-          <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
+            {% if option.value == "created-ascending" or option.value == "title-ascending" or option.value == "title-descending" %}
+              {% continue %}
+            {% endif %}
+            <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
           {%- endfor -%}
         </select>
-        </div>
+      </div>
     </div>
   </div>
 

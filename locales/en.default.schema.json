@@ -1066,7 +1066,7 @@
               "label": "Date, old to new"
             },
             "date_reversed": {
-              "label": "Date, new to old"
+              "label": "New in"
             }
           }
         },
