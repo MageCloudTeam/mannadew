@@ -221,14 +221,14 @@
 
     ],
     "blocks": {
-      "1dde4bd2-72b4-4a0f-8eab-832cb2ee1664": {
-        "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
+      "18171216174956455555": {
+        "type": "shopify:\/\/apps\/order-delivery-date\/blocks\/odd-block\/80605365-b4f4-42ba-9b84-3d39984a49dc",
         "disabled": false,
         "settings": {
         }
       },
-      "18171216174956455555": {
-        "type": "shopify:\/\/apps\/order-delivery-date\/blocks\/odd-block\/80605365-b4f4-42ba-9b84-3d39984a49dc",
+      "61a13f0f-3a3c-461a-8f44-2ef2c2d36158": {
+        "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
         "disabled": false,
         "settings": {
         }
