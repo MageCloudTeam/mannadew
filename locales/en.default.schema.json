@@ -3353,7 +3353,7 @@
       }
     },
     "buy_buttons": {
-      "name": "Buy buttons",
+      "name": "Buy buttons and Quantity picker",
       "settings": {
         "show_dynamic_checkout": {
           "label": "Show dynamic checkout button",
