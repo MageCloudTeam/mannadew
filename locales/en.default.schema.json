@@ -3307,6 +3307,9 @@
     "price": {
       "name": "Price"
     },
+    "dietary_icons": {
+      "name": "Dietary icons"
+    },
     "quantity_selector": {
       "name": "Quantity selector"
     },

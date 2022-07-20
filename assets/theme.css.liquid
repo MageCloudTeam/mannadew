@@ -5754,7 +5754,7 @@ form+.footer__social{
 .js-qty__wrapper{
   display:inline-block;
   position:relative;
-  max-width:80px;
+  max-width:90px;
   min-width:60px;
   overflow:visible;
   background-color:{{ settings.color_body_bg | default: "#fff" }};
@@ -5773,7 +5773,7 @@ form+.footer__social{
   background:none;
   text-align:center;
   width:100%;
-  padding:5px 20px;
+  padding:11px 20px;
   margin:0;
   z-index:1;
 }
@@ -8529,6 +8529,25 @@ html[dir=rtl] .grid-product__content{
   color:#f4af29;
 }
 
+/*Dietary icons block*/
+
+.dietary_icons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dietary_icons .field__img{
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*End dietary icons block*/
+
 .color-swatch{
   position:relative;
   display:block;
@@ -11241,6 +11260,39 @@ html[dir=rtl] .product-single__meta .rte{
       opacity:1
 }
   }
+
+@media only screen and (min-width:1100px){
+  .buy_btns_and_quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .buy_btns_and_quantity>div:first-child{
+    width: 15%;
+  }
+
+  .buy_btns_and_quantity>div:last-child{
+    width: 85%;
+  }
+
+  .buy_btns_and_quantity .payment-buttons,
+  .buy_btns_and_quantity .product-single__form{
+    display: flex;
+  }
+
+  .buy_btns_and_quantity .add-to-cart{
+    margin-left: 20px;
+  }
+
+  .buy_btns_and_quantity .shopify-payment-button{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+  }
+}
 
 @media only screen and (min-width:769px){
 

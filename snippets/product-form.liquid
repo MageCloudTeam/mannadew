@@ -36,6 +36,22 @@
 
     {%- if enable_dynamic_buttons -%}
       {{ form | payment_button }}
+      <style>
+        @media only screen and (min-width:1100px){
+          .buy_btns_and_quantity{
+            margin-bottom: 80px;
+            position: relative;
+          }
+  
+          .buy_btns_and_quantity .product-single__form{
+            display: block;
+          }
+  
+          .js-qty__num{
+            padding:12px 20px;
+          }
+        }
+      </style>
     {%- endif -%}
 
   {%- if enable_dynamic_buttons -%}

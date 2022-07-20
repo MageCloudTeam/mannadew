@@ -241,12 +241,16 @@
                         </div>
                       {%- endif -%}
                     </div>
-                  {%- when 'quantity_selector' -%}
+                  {%- when 'dietary_icons' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
-                      <div class="product__quantity">
-                        {% assign qty_id = section_id | append: product.id %}
-                        <label for="Quantity-{{ qty_id }}">{{ 'products.product.quantity' | t }}</label>
-                        {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
+                      <div class="dietary_icons">
+                        {% assign metafields_Dietary = product.metafields.custom.dietary_requirements | split: ',' %}
+                        {% for field in metafields_Dietary %}
+                          {%- assign field_is_formatted = field | remove: '"' | remove: '[' | remove: ']' -%}
+                          {%- assign field_is_handle = field_is_formatted | handleize -%}
+                          {%- assign img_file_name = field_is_handle | append: '.' | append: 'png' -%}
+                          <span class="field__img" style="background-image: url({{ img_file_name | asset_img_url: 'medium'}});"></span>
+                        {% endfor %}
                       </div>
                     </div>
                   {%- when 'size_chart' -%}
@@ -315,25 +319,33 @@
                         {%- endfor -%}
                       {%- endunless -%}
                     </div>
-                  {%- when 'buy_buttons' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
-                      {%- unless product.empty? -%}
-                        <div class="product-block">
-                          {%- render 'product-form',
-                            form_id: form_id,
-                            product: product,
-                            show_dynamic_checkout: block.settings.show_dynamic_checkout,
-                            current_variant: current_variant
-                          -%}
+                  {%- when 'buy_btns_and_quantity' -%}
+                    <div class="buy_btns_and_quantity">
+                      <div class="product-block" {{ block.shopify_attributes }}>
+                        <div class="product__quantity">
+                          {% assign qty_id = section_id | append: product.id %}
+                          {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
                         </div>
-                      {%- endunless -%}
+                      </div>
+                      <div class="product-block" {{ block.shopify_attributes }}>
+                        {%- unless product.empty? -%}
+                          <div>
+                            {%- render 'product-form',
+                              form_id: form_id,
+                              product: product,
+                              show_dynamic_checkout: block.settings.show_dynamic_checkout,
+                              current_variant: current_variant
+                            -%}
+                          </div>
+                        {%- endunless -%}
 
-                      {%- if block.settings.surface_pickup_enable -%}
-                        <div data-store-availability-holder
-                          data-product-name="{{ product.title | escape }}"
-                          data-base-url="{{ shop.url }}{{ routes.root_url }}"
-                          ></div>
-                      {%- endif -%}
+                        {%- if block.settings.surface_pickup_enable -%}
+                          <div data-store-availability-holder
+                            data-product-name="{{ product.title | escape }}"
+                            data-base-url="{{ shop.url }}{{ routes.root_url }}"
+                            ></div>
+                        {%- endif -%}
+                      </div>
                     </div>
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
