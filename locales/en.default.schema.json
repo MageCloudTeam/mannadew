@@ -3352,6 +3352,9 @@
         }
       }
     },
+    "short_description": {
+      "name": "Short description"
+    },
     "buy_buttons": {
       "name": "Buy buttons and Quantity picker",
       "settings": {

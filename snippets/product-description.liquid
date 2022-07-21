@@ -1,8 +1,12 @@
-{% capture description %}
+{% capture description %}  
   {%- if product.empty? -%}
     {{ 'home_page.onboarding.product_description' | t }}
   {%- else -%}
-    {{ product.description }}
+    {% if product_descriptions.size > 1 and product_descriptions[0] != blank %}
+      {{product_descriptions[0]}}
+    {% else %}  
+      {{ product.description }}
+    {% endif %} 
   {%- endif -%}
 {% endcapture %}
 {%- if is_tab -%}

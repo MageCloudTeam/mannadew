@@ -24,6 +24,8 @@
   endcase
 
   assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+
+  assign product_descriptions = product.description | split: '==='
 -%}
 
 {%- liquid
@@ -164,7 +166,15 @@
                   {%- when 'description' -%}
                     <div class="product-block{% if block.settings.is_tab %} product-block--tab{% endif %}" {{ block.shopify_attributes }}>
                       {%- assign id = block.id | append: product.id -%}
-                      {%- render 'product-description', id: id, product: product, is_tab: block.settings.is_tab -%}
+                      {%- render 'product-description', id: id, product: product, product_descriptions: product_descriptions, is_tab: block.settings.is_tab -%}
+                    </div>
+                  {%- when 'short_description' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      <span>
+                        {% if product_descriptions.size > 1 and product_descriptions[1] != blank %}
+                          {{product_descriptions[1]}}
+                        {% endif %}
+                      </span>
                     </div>
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
