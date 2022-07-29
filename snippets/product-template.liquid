@@ -158,6 +158,64 @@
                         {%- render 'tab', id: tab_id, title: block.settings.title, content: tab_content -%}
                       </div>
                     {% endunless %}
+                  {%- when 'nutritions' -%}
+                    {% if block.settings.title != blank and block.settings.liquid != blank %}
+                      {% if product.metafields.itsgot.label.product != blank %}
+                        <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                          <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+                            <button type="button"
+                              class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open %} is-open{% endif %}" aria-controls="Product-content-{{ block.id | append: product.id }}"
+                              {% if force_open %}aria-expanded="true"{% endif %}>
+                              {{ block.settings.title }}
+                              {%- render 'collapsible-icons' -%}
+                            </button>
+                            <div id="Product-content-{{ block.id | append: product.id }}"
+                              class="collapsible-content collapsible-content--all{% if force_open %} is-open{% endif %}"
+                              {% if force_open %}style="height: auto;"{% endif %}>
+                              <div class="collapsible-content__inner rte">
+                                {{ block.settings.liquid }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                  {%- when 'ingredients' -%}
+                    {%- assign isIngredients = false -%}
+                    {% if product_descriptions.size > 1 %}
+                      {% for ingredients in product_descriptions %}
+                        {% if ingredients contains "product-ingredients" %}
+                          {%- assign isIngredients = true -%}
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}
+                    
+                    {% if block.settings.title != blank %}
+                      {% if isIngredients or block.settings.content != blank %}
+                        <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                          <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+                            <button type="button"
+                              class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open %} is-open{% endif %}" aria-controls="Product-content-{{ block.id | append: product.id }}"
+                              {% if force_open %}aria-expanded="true"{% endif %}>
+                              {{ block.settings.title }}
+                              {%- render 'collapsible-icons' -%}
+                            </button>
+                            <div id="Product-content-{{ block.id | append: product.id }}"
+                              class="collapsible-content collapsible-content--all{% if force_open %} is-open{% endif %}"
+                              {% if force_open %}style="height: auto;"{% endif %}>
+                              <div class="collapsible-content__inner rte">
+                                {% for ingredients in product_descriptions %}
+                                  {% if ingredients contains "product-ingredients" %}
+                                    {{ ingredients | remove_first: 'product-ingredients'}}
+                                  {% endif %}
+                                {% endfor %}
+                                {{ block.settings.content }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endif %}
                   {%- when 'contact' -%}
                     <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
                       {% assign tab_id = block.id | append: product.id %}
@@ -169,13 +227,17 @@
                       {%- render 'product-description', id: id, product: product, product_descriptions: product_descriptions, is_tab: block.settings.is_tab -%}
                     </div>
                   {%- when 'short_description' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
-                      <span>
-                        {% if product_descriptions.size > 1 and product_descriptions[1] != blank %}
-                          {{product_descriptions[1]}}
+                    {% if product_descriptions.size > 1 and product_descriptions[1] != blank and product_descriptions[1] contains "short-description" %}
+                      {% for short_description in product_descriptions %}
+                        {% if short_description contains "short-description" %}
+                          <div class="product-block" {{ block.shopify_attributes }}>
+                            <span>
+                              {{short_description | remove_first: 'short-description'}}
+                            </span>
+                          </div>
                         {% endif %}
-                      </span>
-                    </div>
+                      {% endfor %}
+                    {% endif %}
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
                       {%- assign hide_sale_price = true -%}

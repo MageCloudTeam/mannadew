@@ -378,6 +378,41 @@
   ]
 },
 {
+  "type": "nutritions",
+  "name": "Nutrition facts",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "liquid",
+      "id": "liquid",
+      "label": "Liquid code",
+      "default": "{{ product.title }}"
+    }
+  ]
+},
+{
+  "type": "ingredients",
+  "name": "Ingredients",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Tab content"
+    }
+  ]
+},
+{
   "type": "share",
   "name": "t:product_block.share_on_social.name",
   "limit": 1,
