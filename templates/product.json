@@ -62,20 +62,18 @@
             "page": ""
           }
         },
-        "b943c4a4-3d49-45fa-9d02-be15707e6dc7": {
-          "type": "tab",
+        "9f7b3d8b-391c-4ce1-840d-14046c98351a": {
+          "type": "ingredients",
           "settings": {
             "title": "Ingredients",
-            "content": "<p>{{ product.metafields.custom.ingredients.value }}<\/p>",
-            "page": ""
+            "content": ""
           }
         },
-        "6a2f3913-17ec-4027-8d79-a5f9435c0014": {
-          "type": "tab",
+        "b4d5b962-da9a-4bf5-adce-4f79492f2a02": {
+          "type": "nutritions",
           "settings": {
-            "title": "Nutritional Information",
-            "content": "<p>Label from app.<\/p>",
-            "page": ""
+            "title": "Nutrition facts",
+            "liquid": "{%- assign nutrition_product_id = product.metafields.itsgot.label.product -%}\n                    <div data-itsgot-product=\"{{nutrition_product_id}}\" data-itsgot-user=\"848\"><\/div>\n<script async=\"async\" src=\"\/\/itsgot.com\/embed.js\"><\/script>"
           }
         }
       },
@@ -89,8 +87,8 @@
         "description",
         "tab",
         "addb51ea-48bd-41f9-9c79-f7d04af319ed",
-        "b943c4a4-3d49-45fa-9d02-be15707e6dc7",
-        "6a2f3913-17ec-4027-8d79-a5f9435c0014"
+        "9f7b3d8b-391c-4ce1-840d-14046c98351a",
+        "b4d5b962-da9a-4bf5-adce-4f79492f2a02"
       ],
       "settings": {
         "sku_enable": false,
